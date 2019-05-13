@@ -27,7 +27,7 @@ def polinome(mas_x, mas_y, t):
   z = z + mas_y[j] * p1 / p2
  return z
 
-
+print(polinome(mas_x, mas_y, 1.3))
 x_new = np.linspace(np.min(mas_x), np.max(mas_x), 100)
 y_new = [polinome(mas_x, mas_y, i) for i in x_new]
 plt.plot(mas_x, mas_y, 'o', x_new, y_new)
