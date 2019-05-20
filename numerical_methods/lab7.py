@@ -15,11 +15,11 @@ mas_y = np.array([0.1011, 0.1183, 0.1421, 0.1893, 0.2816, 0.2856,  0.3021], dtyp
 def polinome(mas_x, mas_y, t):
  z = 0
  for j in range(len(mas_y)):
-  p1 = 1;
+  p1 = 1
   p2 = 1
   for i in range(len(mas_x)):
    if i == j:
-    p1 = p1 * 1;
+    p1 = p1 * 1
     p2 = p2 * 1
    else:
     p1 = p1 * (t - mas_x[i])
