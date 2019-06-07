@@ -37,7 +37,7 @@ def runge_kutta(prev_y1, prev_y2, h):
 
     return [next_y1, next_y2]
 print("step=%0.3f, y1=%0.3f, y2=%0.3f"%(begin_t, y1[0], y2[0]))
-for i in range(200):
+for i in range(4):
     [prev_y1, prev_y2] = runge_kutta(prev_y1, prev_y2, step)
     print("step =%0.3f, y1 = %0.6f y2 = %0.6f" % (step * (i + 1), prev_y1, prev_y2))
     y1.append(prev_y1)
