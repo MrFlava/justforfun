@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import math
 y1 = []
-import math
 y2 = []
 prev_y1 = 1
 prev_y2 = 0
