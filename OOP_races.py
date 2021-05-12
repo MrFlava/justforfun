@@ -1,11 +1,29 @@
 from schema import Schema, And, Use, SchemaError
 
+# Races class
 
-class Car:
 
-    def __init__(self, driver: dict, driver_conf: Schema, wheels: list,
+class Race:
+
+    def __init__(self, cars: list) -> None:
+        self.cars = cars
+        self.cars_len = len(cars)
+
+    def show_cars_quantity(self):
+        return f'Cars quantity at this race: {self.cars_len}'
+
+# Cars class
+
+
+class Car(Race):
+
+    def __init__(self, time: int, driver: dict, driver_conf: Schema, wheels: list,
                  wheel_conf: Schema, engine: dict, engine_conf: Schema,
                  electronics: dict, electronics_conf: Schema) -> None:
+        super(Race, self).__init__()
+
+        if not isinstance(time, int):
+            raise ValueError
 
         if len(wheels) != 4:
             raise ValueError
@@ -28,6 +46,8 @@ class Car:
             self.electronics = electronics
         else:
             raise AttributeError
+
+        self.time = time
 
     def _driver_data_validator(self, data: dict, conf: Schema) -> bool:
         try:
@@ -77,6 +97,20 @@ class Car:
             prepared = False
         return prepared
 
+    def wheel_quantity_method(self) -> str:
+        for wheel in self.wheels:
+            if self.time == 50:
+                wheel['fuel_supply'] -= 0.01
+
+        return 'Quality of wheel has changed'
+
+    def fuel_tank_method(self) -> str:
+
+        if self.time == 50:
+            self.engine['fuel_supply'] -= 10
+
+        return 'Fuel tan capacity has changed'
+
     def show_driver_info(self) -> str:
         return f"Driver's card\n " \
                f" Name: {self.driver.get('name')} , " \
@@ -108,7 +142,7 @@ class Car:
 
     def show_electronics_info(self) -> str:
         s = f"Electronics data\n " \
-               f" OK: {self.electronics.get('OK')} \n"
+            f" OK: {self.electronics.get('OK')} \n"
 
         if self.electronics_prepared_for_race_checking() is False:
             s += "Attention! \n" \
@@ -116,28 +150,53 @@ class Car:
 
         return s
 
+# Test data
 
-c = Car(driver={'skills': 50, 'name': 'John Johnson', 'age': 18},
-        driver_conf=Schema({'skills': And(Use(int)), 'name': And(Use(str)), 'age': And(Use(int))}), wheels=[
-        {'wheel_brand': 'Michelin',
-         'diameter': 20, 'quality': 1},
-        {'wheel_brand': 'Michelin',
-         'diameter': 20, 'quality': 1},
-        {'wheel_brand': 'Michelin',
-         'diameter': 20, 'quality': 1},
-        {'wheel_brand': 'Michelin',
-         'diameter': 20, 'quality': 1}],
-        wheel_conf=Schema({'wheel_brand': And(Use(str)), 'diameter': And(Use(int)), 'quality': And(Use(float))}),
-        engine={'turnovers': 200, 'fuel_supply': 1}, engine_conf=Schema({'turnovers': And(Use(int)),
-                                                                         'fuel_supply': And(Use(float))}),
-        electronics={'OK': False}, electronics_conf=Schema({'OK': And(Use(bool))}))
 
-print(c.show_driver_info())
-print(c.show_wheels_info())
-print(c.show_engine_info())
-print(c.show_electronics_info())
+c1 = Car(time=50, driver={'skills': 50, 'name': 'John Johnson', 'age': 18},
+         driver_conf=Schema({'skills': And(Use(int)), 'name': And(Use(str)), 'age': And(Use(int))}),
+         wheels=[
+             {'wheel_brand': 'Michelin',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Michelin',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Michelin',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Michelin',
+              'diameter': 20, 'quality': 1}],
+         wheel_conf=Schema(
+             {'wheel_brand': And(Use(str)), 'diameter': And(Use(int)), 'quality': And(Use(float))}),
+         engine={'turnovers': 200, 'fuel_supply': 1}, engine_conf=Schema({'turnovers': And(Use(int)),
+                                                                          'fuel_supply': And(Use(float))}),
+         electronics={'OK': True}, electronics_conf=Schema({'OK': And(Use(bool))}))
 
-"""
-stuff for the  future
-"""
-# class Road(Car):
+c2 = Car(time=20, driver={'skills': 50, 'name': 'Ivan Ivanov', 'age': 25},
+         driver_conf=Schema({'skills': And(Use(int)), 'name': And(Use(str)), 'age': And(Use(int))}),
+         wheels=[
+             {'wheel_brand': 'Good Year',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Good Year',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Good Year',
+              'diameter': 20, 'quality': 1},
+             {'wheel_brand': 'Good Year',
+              'diameter': 20, 'quality': 1}],
+         wheel_conf=Schema(
+             {'wheel_brand': And(Use(str)), 'diameter': And(Use(int)), 'quality': And(Use(float))}),
+         engine={'turnovers': 200, 'fuel_supply': 1}, engine_conf=Schema({'turnovers': And(Use(int)),
+                                                                          'fuel_supply': And(Use(float))}),
+         electronics={'OK': True}, electronics_conf=Schema({'OK': And(Use(bool))}))
+
+
+race = Race(cars=[c1, c2])
+
+# Calling class methods
+
+# print(race.show_cars_quantity())
+# print()
+# print(race.child.show_driver_info())
+# print(race.cars[0].wheel_quantity_method())
+# print(race.cars[0].show_wheels_info())
+print(race.cars[0].fuel_tank_method())
+print(race.cars[0].show_engine_info())
+# print(c.show_electronics_info())
