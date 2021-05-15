@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <script>
+  function checkAge(age) {
+  	return (age > 18) ? true: confirm('Родители разрешили?');
+  }
+  checkAge(15);
+  function checkAge_v2(age) {
+  	return (age > 18)|| confirm('Родители разрешили?');
+  }
+  checkAge_v2(20);
+  </script>
+</body>
+</html>
