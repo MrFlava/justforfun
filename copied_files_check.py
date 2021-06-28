@@ -1,26 +1,28 @@
 import os
 import hashlib
 
+paths = ['/home/user/PycharmProjects/justforfun/test_path1']
 
-def chunk_reader(fobj, chunk_size=1024):
+
+def chunk_reader(file_obj, chunk_size: int = 1024):
     """Generator that reads a file in chunks of bytes"""
     while True:
-        chunk = fobj.read(chunk_size)
+        chunk = file_obj.read(chunk_size)
         if not chunk:
             return
         yield chunk
 
 
-def check_for_duplicates(paths, hash=hashlib.sha1):
+def check_for_duplicates(paths_list: list, hash_func=hashlib.sha1):
     hashes = {}
-    for path in paths:
-        for dirpath, dirnames, filenames in os.walk(path):
+    for path in paths_list:
+        for dir_path, dir_names, filenames in os.walk(path):
             for filename in filenames:
-                full_path = os.path.join(dirpath, filename)
-                hashobj = hash()
+                full_path = os.path.join(dir_path, filename)
+                hash_obj = hash_func()
                 for chunk in chunk_reader(open(full_path, 'rb')):
-                    hashobj.update(chunk)
-                file_id = (hashobj.digest(), os.path.getsize(full_path))
+                    hash_obj.update(chunk)
+                file_id = (hash_obj.digest(), os.path.getsize(full_path))
                 duplicate = hashes.get(file_id, None)
                 if duplicate:
                     print("Duplicate found: %s and %s" % (full_path, duplicate))
@@ -29,4 +31,7 @@ def check_for_duplicates(paths, hash=hashlib.sha1):
 
 
 if __name__ == "__main__":
-    check_for_duplicates(['/home/user/PycharmProjects/justforfun/test_path1'])
+    if paths:
+        check_for_duplicates(paths)
+    else:
+        print("Please, enter paths to the check_for_duplicates function")

@@ -30,33 +30,26 @@ def calculate_total_price(products: list, tax: float, margin: float) -> list:
     return calculated_products
 
 
-def show_output_data(input_data: dict) -> dict:
-
+def show_output_data(input_data: dict) -> (dict, str):
     products = input_data.get('products')
     tax = input_data.get('tax')
     margin = input_data.get('margin')
+    if isinstance(products, list) \
+            and isinstance(tax, float) \
+            and isinstance(margin, float):
+        output_data = {"products": calculate_total_price(products, tax, margin), "total_price": 0}
 
-    output_data = {"products": calculate_total_price(products, tax, margin), "total_price": 0}
+        for prod in output_data.get("products"):
+            output_data["total_price"] += prod.get("price")
 
-    for prod in output_data.get("products"):
-        output_data["total_price"] += prod.get("price")
+        return output_data
 
-    return output_data
+    else:
+        return "Inappropriate data type"
 
 
 if __name__ == "__main__":
-    show_output_data(data)
-    print(show_output_data(data))
-
-# Output Data Format
-
-# {
-# "products": [
-# {
-# "id": 0,
-# "title": "string",
-# "price": 0
-# }
-# ],
-# "total_price": 0
-# }
+    if isinstance(data, dict):
+        print(show_output_data(data))
+    else:
+        print("Inappropriate data type")
