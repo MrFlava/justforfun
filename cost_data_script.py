@@ -16,14 +16,14 @@ data = {
 }
 
 
-def calculate_total_price(products: list, tax: float, margin: float) -> list:
+def calculate_total_price(products: list, tax: float) -> list:
     calculated_products = []
     for product in products:
         calculated_products.append(
             {
                 "id": product.get("id"),
                 "title": product.get("title"),
-                "price": round(product.get("net_cost") - tax - margin, 2)
+                "price": round(product.get("net_cost") + (tax * product.get("net_cost")))
             }
         )
 
@@ -34,13 +34,13 @@ def show_output_data(input_data: dict) -> (dict, str):
     products = input_data.get('products')
     tax = input_data.get('tax')
     margin = input_data.get('margin')
+
     if isinstance(products, list) \
             and isinstance(tax, float) \
             and isinstance(margin, float):
-        output_data = {"products": calculate_total_price(products, tax, margin), "total_price": 0}
-
-        for prod in output_data.get("products"):
-            output_data["total_price"] += prod.get("price")
+        output_data = {"products": calculate_total_price(products, tax)}
+        output_data["total_price"] = sum(list(p.get("price") for p in output_data.get("products"))) / \
+                                     len(output_data.get("products"))
 
         return output_data
 
