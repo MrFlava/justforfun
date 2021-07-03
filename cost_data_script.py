@@ -39,8 +39,8 @@ def show_output_data(input_data: dict) -> (dict, str):
             and isinstance(tax, float) \
             and isinstance(margin, float):
         output_data = {"products": calculate_total_price(products, tax)}
-        output_data["total_price"] = sum(list(p.get("price") for p in output_data.get("products"))) / \
-                                     len(output_data.get("products"))
+        output_data["total_price"] = (sum(list(p.get("price") for p in output_data.get("products"))) /
+                                      len(output_data.get("products"))) * len(output_data.get("products"))
 
         return output_data
 
