@@ -1,8 +1,8 @@
-# 1 Palindrome in list checking
+# 1. Palindrome in list checking
 
-# def palindormes_check(words: list) -> list:
+# def palindromes_check(words: list) -> list:
 #     return list(filter(lambda s: s[::-1] == s, words))
-# 2 Decorator benchmark
+# 2. Decorator benchmark
 
 # import time
 # import functools
@@ -32,12 +32,56 @@
 # @myShinyDeco()
 # @calling_counter
 # def func():
-#     return 'cooletst function accross USA '
+#     return 'coolest function across USA '
+
+# 3. Delete duplicates with two ways
+""" First way """
+
+
+# def delete_duplicates_way_two(strings_list: list) -> list:
+#     return list(set(strings_list))
+
+
+""" Second way """
+
+
+# def delete_duplicates_way_one(strings_list: list) -> list:
+#     output_list = []
+#     for i in strings_list:
+#         if i not in output_list:
+#             output_list.append(i)
+#     return output_list
+
+# 4. Operations with string numbers
+
+# def str_sum(num1: str, num2: str, oper: str) -> float:
+#     if oper not in ['+', '-', '/', '*']:
+#         raise NotImplementedError
+#
+#     operators = {
+#         '+': (lambda: int(num1) + int(num2))(),
+#         '-': (lambda: int(num1) - int(num2))(),
+#         '*': (lambda: int(num1) * int(num2))(),
+#         '/': (lambda: int(num1) / int(num2))(),
+#     }
+#
+#     return operators[oper]
 
 # def main():
+# num1 = '555'
+# num2 = '888'
+# operator = '+'
+
 # a = ['mega', 'level', 'pop', 'funny', 'wave', 'cool', 'super', 'mom']
+# s_list = ['bill', 'there', 'hey', 'pay', 'bill', 'there', 'sugar']
+
+# print(str_sum(num1, num2, operator))
+# print(delete_duplicates_way_one(s_list))
+# print(delete_duplicates_way_two(s_list))
+
 # print(func())
-# print(palindormes_check(a))
+
+# print(palindromes_check(a))
 
 # if __name__ == "__main__":
 #     main()
