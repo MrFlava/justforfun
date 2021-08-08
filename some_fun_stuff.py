@@ -52,7 +52,6 @@
 
 """ Second way """
 
-
 #
 # def delete_duplicates_way_one(strings_list: list) -> list:
 #     output_list = []
@@ -150,33 +149,106 @@
 #         return max_gold(capacity, weights, bars_number)
 
 # 8. Working with SQLite
+
 import sqlite3
 
+"""Basic example"""
 
 # def sqlite3_db_work(database_name):
 #     con = sqlite3.connect(database_name)
 #     try:
 #         cur = con.cursor()
-#
 #         # Create table
 #         cur.execute(
 #             """CREATE TABLE stocks
 #                        (date text, trans text, symbol text, qty real, price real)"""
 #         )
-#
 #         # Insert a row of data
 #         cur.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
-#
 #         # Save (commit) the changes
 #         con.commit()
-#
 #         return f"{[row for row in cur.execute('SELECT * FROM stocks ORDER BY price')]}"
 #     except sqlite3.Error as error:
 #         return f"Error while connecting to sqlite, {error}"
 
+"""Some requests"""
+
+# 9. Working with PostgreSQL
+
+import psycopg2
+from sqlalchemy import create_engine
+from sqlalchemy import Column, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+"""Basic example with psycopg2"""
+
+
+# def psycopg2_basic_db_usage():
+#     conn = psycopg2.connect(dbname='postgres', user='postgres',
+#                             password='112323', host='localhost')
+#     cursor = conn.cursor()
+#
+#     # Create table
+#     # cursor.execute("CREATE TABLE users (id SERIAL PRIMARY KEY, " +
+#     #                "login VARCHAR(64), password VARCHAR(64))")
+#     # conn.commit()
+#     # Insert a row of data
+#     # cursor.execute("INSERT INTO users (login, password) VALUES (%s, %s)",
+#     #                ("afiskon", "123"))
+#     # cursor.execute("INSERT INTO users (login, password) VALUES (%s, %s)",
+#     #                ("eax", "456"))
+#
+#     conn.commit()
+#
+#     cursor.execute("SELECT id, login, password FROM users")
+#     print(cursor.fetchall())
+#
+#     return 'Connection were closed'
+
+
+"""Basic example with sqlalchemy  ORM"""
+
+
+# def sqlalchemy_orm_usage():
+#     engine = create_engine('postgresql://postgres:112323@localhost:5432/postgres')
+#     base = declarative_base()
+#
+#     class Film(base):
+#         __tablename__ = 'films'
+#
+#         title = Column(String, primary_key=True)
+#         director = Column(String)
+#         year = Column(String)
+#
+#     Session = sessionmaker(engine)
+#     session = Session()
+#
+#     base.metadata.create_all(engine)
+#
+#     # Create
+#     doctor_strange = Film(title="CCC Strange", director="Scott Derrickson", year="2016")
+#     session.add(doctor_strange)
+#     session.commit()
+#
+#     # Update
+#     doctor_strange.title = "Some2013Film"
+#     session.commit()
+#
+#     # Read
+#     films = session.query(Film)
+#     for film in films:
+#         print(film.title)
+#
+#     # Delete
+#     session.delete(doctor_strange)
+#     session.commit()
+
 
 def main():
     pass
+    # print(sqlalchemy_orm_usage())
+    # print(psycopg2_basic_db_usage())
     # database_name = "example.db"
 
     # print(sqlite3_db_work(database_name))
