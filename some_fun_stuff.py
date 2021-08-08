@@ -149,9 +149,37 @@
 #     else:
 #         return max_gold(capacity, weights, bars_number)
 
+# 8. Working with SQLite
+import sqlite3
+
+
+# def sqlite3_db_work(database_name):
+#     con = sqlite3.connect(database_name)
+#     try:
+#         cur = con.cursor()
+#
+#         # Create table
+#         cur.execute(
+#             """CREATE TABLE stocks
+#                        (date text, trans text, symbol text, qty real, price real)"""
+#         )
+#
+#         # Insert a row of data
+#         cur.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
+#
+#         # Save (commit) the changes
+#         con.commit()
+#
+#         return f"{[row for row in cur.execute('SELECT * FROM stocks ORDER BY price')]}"
+#     except sqlite3.Error as error:
+#         return f"Error while connecting to sqlite, {error}"
+
 
 def main():
     pass
+    # database_name = "example.db"
+
+    # print(sqlite3_db_work(database_name))
     # args = parser.parse_args()
     #
     # print(bounded_knapsack(args))
