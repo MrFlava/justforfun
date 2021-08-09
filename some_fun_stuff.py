@@ -168,21 +168,21 @@ def sqlite3_db_work(database_name):
         cur.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',200,100.16)")
         # Save (commit) the changes
         con.commit()
+        """Some requests"""
         return f"{[row for row in cur.execute('SELECT * FROM stocks WHERE qty < 200 AND price < 40')]}"
 
         # return f"{[row for row in cur.execute('SELECT * FROM stocks ORDER BY price')]}"
     except sqlite3.Error as error:
         return f"Error while connecting to sqlite, {error}"
 
-"""Some requests"""
 
 # 9. Working with PostgreSQL
 
-import psycopg2
-from sqlalchemy import create_engine
-from sqlalchemy import Column, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+# import psycopg2
+# from sqlalchemy import create_engine
+# from sqlalchemy import Column, String
+# from sqlalchemy.ext.declarative import declarative_base
+# from sqlalchemy.orm import sessionmaker
 
 """Basic example with psycopg2"""
 
