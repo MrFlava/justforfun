@@ -1,0 +1,1226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-02-02 16:53+0200\n"
+"PO-Revision-Date: 2020-02-02 15:04+0000\n"
+"Last-Translator: Weblate Admin <flowelcat@gmail.com>\n"
+"Language-Team: Russian <https://weblate.botman.com.ua/projects/budtaxibot/"
+"master/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/dispatcher.py:20
+msgid ""
+"Message can't be deleted by bot because it's more than 48 hours old.\n"
+"You can delete it by yourself"
+msgstr ""
+"Сообщение не может быть удалено ботом потому что оно старше 48 часов.\n"
+"Вы можете удалить сообщение самостоятельно"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:190
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:89
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:107
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:107
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:155
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:99
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:137
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:159
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:186
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:194
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:33
+#: src/menus/start/balance.py:40 src/menus/start/balance.py:49
+#: src/menus/start/balance.py:87 src/menus/start/create_order.py:81
+msgid "Back"
+msgstr "Назад"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:194
+msgid "Back to edit"
+msgstr "Назад к редактированию"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:198
+msgid "Save"
+msgstr "Сохранить"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:214
+msgid "Reset"
+msgstr "🧹 Очистить поле"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:218
+msgid "Send location"
+msgstr "Отправить местоположение"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:274
+msgid "Please send me your location"
+msgstr "Пожалуйста, отправьте ваше местоположение"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:301
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:322
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:220
+#: src/menus/start/my_orders.py:69 src/menus/start/search_orders.py:84
+#: src/menus/start/search_orders.py:117
+msgid "Yes"
+msgstr "Да"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:301
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:323
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:221
+#: src/menus/start/my_orders.py:69 src/menus/start/search_orders.py:85
+#: src/menus/start/search_orders.py:118
+msgid "No"
+msgstr "Нет"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:304
+msgid "Uploaded"
+msgstr "Загружено"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:306
+msgid "Not uploaded"
+msgstr "Не загружено"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:311
+msgid "Waiting..."
+msgstr "Ожидается ввод..."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:523
+msgid "Please send me document"
+msgstr "Пожалуйста отправьте мне документ"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:527
+msgid "Please send me photo"
+msgstr "Пожалуйста, отправьте фото"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:531
+msgid "Please send me video"
+msgstr "Пожалуйста, отправьте видео"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:535
+msgid "Please send me animation"
+msgstr "Пожалуйста, отправьте анимацию"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:539
+msgid "Please send me sticker"
+msgstr "Пожалуйста, отправьте стикер"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:583
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/buttons_time_picker.py:159
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/numpad_date_picker.py:147
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/numpad_time_picker.py:132
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:123
+msgid "Wrong input, try again"
+msgstr "Некорректный ввод, попробуйте еще раз"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:613
+msgid "This field does not allow upload this type of content."
+msgstr "Это поле не позволяет загружать этот тип контента."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:644
+msgid "This field does not allow upload location."
+msgstr "Это поле не позволяет загружать местоположение."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/add_edit_menu/arrow_add_edit_menu.py:702
+#: src/menus/start/create_order.py:94 src/menus/start/profile.py:91
+msgid "Please fill required fields."
+msgstr "Пожалуйста, заполните необходимые поля."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/helpers.py:50
+msgid "Sorry unknown command."
+msgstr "Извините, неизвестная команда."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/helpers.py:345
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/helpers.py:347
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:147
+msgid "You were restricted to use this menu"
+msgstr "У вас недостаточно прав для доступа к этому меню"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/bunch_list_menu.py:33
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:41
+msgid "There is nothing to list"
+msgstr "Здесь ничего нет"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:37
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:39
+msgid "Page"
+msgstr "Страница"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:37
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:39
+msgid "of"
+msgstr "из"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:101
+msgid "Exit search"
+msgstr "Закрыть поиск"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/list_menu.py:259
+msgid "Nothing found"
+msgstr "Ничего не найдено"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:39
+msgid "Object"
+msgstr "Объект"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:86
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:136
+msgid "Delete"
+msgstr "Удалить"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:298
+msgid "Are you sure you want to delete this object?"
+msgstr "Вы точно хотите удалить этот объект?"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/list_menus/one_list_menu.py:310
+msgid "Object deleted"
+msgstr "Объект удален"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:63
+#: src/menus/start/create_order.py:143
+msgid "Please select a date:"
+msgstr "Пожалуйста, выберите дату:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:79
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:79
+msgid "January"
+msgstr "Январь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:81
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:81
+msgid "February"
+msgstr "Февраль"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:83
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:83
+msgid "March"
+msgstr "Март"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:85
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:85
+msgid "April"
+msgstr "Апрель"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:87
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:87
+msgid "May"
+msgstr "Май"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:89
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:89
+msgid "June"
+msgstr "Июнь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:91
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:91
+msgid "July"
+msgstr "Июль"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:93
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:93
+msgid "August"
+msgstr "Август"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:95
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:95
+msgid "September"
+msgstr "Сентябрь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:97
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:97
+msgid "October"
+msgstr "Октябрь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:99
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:99
+msgid "November"
+msgstr "Ноябрь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:101
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:101
+msgid "December"
+msgstr "Декабрь"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:103
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:103
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:90
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:121
+msgid "Mon."
+msgstr "Пн."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:122
+msgid "Tue."
+msgstr "Вт."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:123
+msgid "Wed."
+msgstr "Ср."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:124
+msgid "Thu."
+msgstr "Чт."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:125
+msgid "Fri."
+msgstr "Пт."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:126
+msgid "Sat."
+msgstr "Сб."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:127
+msgid "Sun."
+msgstr "Вс."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:210
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:173
+msgid "You can select only future date"
+msgstr "Вы можете выбрать только будущую дату"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_date_picker.py:238
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:195
+msgid "You can select only past date"
+msgstr "Вы можете выбрать только прошедшую дату"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/calendar_month_picker.py:63
+msgid "Please select a month:"
+msgstr "Пожалуйста, выберите месяц:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/numpad_date_picker.py:124
+msgid "Wrong date"
+msgstr "Неправильный формат даты"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:53
+msgid "Select days using buttons below"
+msgstr "Выберите дни, используя кнопки ниже"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:55
+msgid "Selected days:\n"
+msgstr "Выбранные дни:\n"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:59
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:82
+msgid "Monday"
+msgstr "Понедельник"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:61
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:83
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:63
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:84
+msgid "Wednesday"
+msgstr "Среда"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:65
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:85
+msgid "Thursday"
+msgstr "Четверг"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:67
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:86
+msgid "Friday"
+msgstr "Пятница"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:69
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:87
+msgid "Saturday"
+msgstr "Суббота"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:71
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:88
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/picker_menus/week_days_picker.py:73
+msgid "Error"
+msgstr "Ошибка"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:67
+msgid "Please wait, processing row №{line}..."
+msgstr "Пожалуйста подождите, обрабатывается строка №{line}…"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:160
+msgid "Please send me CSV file."
+msgstr "Пожалуйста, отправьте мне CSV файл."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:195
+msgid "Unknown column, skipping..."
+msgstr "Неизвестный столбец, пропуск..."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:228
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:241
+msgid "Parameter is required but missing"
+msgstr "Параметр обязателен, но отсутствует"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:266
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:268
+msgid "Image link returned {status_code} code"
+msgstr "Ссылка на картинку вернула код {status_code}"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:291
+msgid "Telegram error occurred while processing image link"
+msgstr ""
+"Возникла ошибка связанная с телеграмом во время обработки ссылки на "
+"изображение"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:335
+msgid "Translation has no such attribute as \"{param}\""
+msgstr "Перевод не имеет такого определения как \"{param}\""
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:344
+msgid "{model} has no such attribute as \"{param}\""
+msgstr "{model} не имеет такого определения как \"{param}\""
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:397
+msgid "Data imported successfully"
+msgstr "Данные успешно импортированы"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:399
+msgid "⚠{warnings} warnings occurred while importing file:"
+msgstr "⚠{warnings} предупреждений возникло во время импорта файла:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:406
+msgid "Data imported successfully."
+msgstr "Данные успешно импортированы."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:411
+msgid "❌{errors} errors occurred while importing file:"
+msgstr "❌{errors} возникло ошибок во время импорта файла:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/csv_loader.py:417
+msgid "File not imported"
+msgstr "Файл не импортирован."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:42
+msgid "Return user to start menu"
+msgstr "Вернуться в старт-меню"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:43
+msgid ""
+"Close distribution message. Do not use if you have more than one message!"
+msgstr ""
+"Закрыть сообщение рассылки. Не используйте, если у вас есть более одного "
+"сообщения!"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:49
+msgid "Messages: "
+msgstr "Сообщения: "
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:64
+msgid "Add new message using button below"
+msgstr "Добавьте новое сообщение, используя кнопки ниже"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:69
+msgid "Text"
+msgstr "Текст"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:72
+msgid "Photo"
+msgstr "Фото"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:77
+msgid "Buttons:"
+msgstr "Кнопки:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:101
+msgid "Send me text message or photo with or without description."
+msgstr "Отправьте мне текст или фото с описанием или без."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:143
+msgid "Edit caption"
+msgstr "Изменить описание"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:161
+msgid "Send me new caption for photo."
+msgstr "Пришлите мне описание для фото."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:177
+msgid "Please select callback that you want to add:"
+msgstr "Пожалуйста, выберите действие, которое хотите добавить:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:195
+msgid "Please enter text which would be displayed on button"
+msgstr "Пожалуйста, введите текст, который будет отображаться на кнопке"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:217
+msgid "You must add at least one message."
+msgstr "Вы должны добавить хотя бы одно сообщение."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:227
+msgid "Messages will be sent to all bot users. Continue?"
+msgstr "Сообщение отправится всем пользователям бота. Продолжить?"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/instant_distribution.py:231
+msgid "Message was sent to all bot users except you"
+msgstr "Сообщение отправилось всем пользователям бота, кроме вас"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:35
+msgid "Enter username, id or name:"
+msgstr "Введите Username, ID или Имя пользователя:"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:88
+msgid "ID: "
+msgstr "ID: "
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:89
+msgid "Name: "
+msgstr "Имя: "
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:90
+msgid "Username: "
+msgstr "Юзернейм: "
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:91
+msgid "Permissions: "
+msgstr "Привилегии: "
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:100
+msgid "Empty"
+msgstr "Пусто"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:103
+msgid "Nobody found"
+msgstr "Никого не найдено"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:111
+msgid "found"
+msgstr "нашел"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:111
+msgid "out of"
+msgstr "из"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:120
+msgid "Add permission"
+msgstr "Добавить привилегию"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:122
+msgid "Remove permission"
+msgstr "Удалить привилегию"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:161
+msgid "Select permission to add to {user}."
+msgstr "Выберите привилегию для добавления пользователю {user}."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:163
+msgid "User {user} has all permissions"
+msgstr "У пользователя {user} есть все привилегии"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:185
+msgid "Add all"
+msgstr "Добавить все"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:199
+msgid "All permissions added"
+msgstr "Все привилегии добавлены"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:214
+msgid "Permission added"
+msgstr "Привилегия добавлена"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:245
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:361
+msgid "Can't find any permission by your query"
+msgstr "Не найдено ни одной привилегии по вашему запросу"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:278
+msgid "Select permission to remove from {user}."
+msgstr "Выберите привилегию для удаления от пользователя {user}."
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:280
+msgid "User {user} has no permissions"
+msgstr "У пользователя {user} нет никаких привилегий"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:302
+msgid "Remove all"
+msgstr "Удалить все"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:316
+msgid "All permissions removed"
+msgstr "Все привилегии удалены"
+
+#: .venv/lib/python3.6/site-packages/botmanlib/menus/ready_to_use/permissions.py:331
+msgid "Permission removed"
+msgstr "Привилегия удалена"
+
+#: src/app.py:31
+msgid "You are deleted from this bot."
+msgstr "Вы удалены из данного бота."
+
+#: src/menus/admin/admin.py:46
+msgid "Permissions"
+msgstr "Привилегии"
+
+#: src/menus/admin/admin.py:48
+msgid "Distribution"
+msgstr "Рассылка"
+
+#: src/menus/admin/admin.py:50
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/menus/admin/admin.py:51
+msgid "Back to main menu"
+msgstr "Вернуться в главное меню"
+
+#: src/menus/admin/admin.py:53
+msgid "Admin menu:"
+msgstr "Меню администратора:"
+
+#: src/menus/admin/settings.py:30
+msgid "*Price per order"
+msgstr "* Цена за заказ"
+
+#: src/menus/admin/settings.py:30
+msgid "UAH"
+msgstr "Грн"
+
+#: src/menus/start/accepted_orders.py:40 src/menus/start/my_orders.py:41
+#: src/menus/start/search_orders.py:43
+msgid "Technique type: {technique_type}"
+msgstr "Тип техники: {technique_type}"
+
+#: src/menus/start/accepted_orders.py:41
+msgid "Order:  {order_status}"
+msgstr "Заказ: {order_status}"
+
+#: src/menus/start/accepted_orders.py:42 src/menus/start/my_orders.py:43
+#: src/menus/start/search_orders.py:45
+msgid "Date: {date}"
+msgstr "Дата: {date}"
+
+#: src/menus/start/accepted_orders.py:43 src/menus/start/my_orders.py:44
+#: src/menus/start/search_orders.py:46
+msgid "Time: {time}"
+msgstr "Время: {time}"
+
+#: src/menus/start/accepted_orders.py:44
+msgid "Full name:"
+msgstr "Полное имя:"
+
+#: src/menus/start/accepted_orders.py:45 src/menus/start/my_orders.py:50
+#: src/menus/start/search_orders.py:49
+msgid "Phone: {phone}"
+msgstr "Телефон: {phone}"
+
+#: src/menus/start/accepted_orders.py:47 src/menus/start/my_orders.py:49
+#: src/menus/start/search_orders.py:51
+msgid "Email: {email}"
+msgstr "Имейл: {email}"
+
+#: src/menus/start/accepted_orders.py:48 src/menus/start/my_orders.py:51
+#: src/menus/start/search_orders.py:52
+msgid "Comment: {comment}"
+msgstr "Комментарий: {comment}"
+
+#: src/menus/start/accepted_orders.py:49 src/menus/start/my_orders.py:52
+#: src/menus/start/search_orders.py:53
+msgid "City: {city}"
+msgstr "Город: {city}"
+
+#: src/menus/start/accepted_orders.py:50 src/menus/start/my_orders.py:53
+#: src/menus/start/search_orders.py:54
+msgid "Address: {address}"
+msgstr "Адрес: {address}"
+
+#: src/menus/start/accepted_orders.py:52 src/menus/start/my_orders.py:55
+#: src/menus/start/search_orders.py:56
+msgid "No orders here yet"
+msgstr "Здесь еще нет заказов"
+
+#: src/menus/start/balance.py:38
+msgid "You had {balance} UAH on your main balance."
+msgstr "На Вашем основном балансе {balance} грн."
+
+#: src/menus/start/balance.py:39
+msgid "Replenish balance"
+msgstr "Пополнить баланс"
+
+#: src/menus/start/balance.py:48
+msgid "Enter the replenishment amount in UAH"
+msgstr "Введите сумму пополнения в грн."
+
+#: src/menus/start/balance.py:65
+msgid "Wrong input. Please enter a number."
+msgstr "Неверный ввод. Пожалуйста, введите номер."
+
+#: src/menus/start/balance.py:72
+msgid "Replenish balance in {bot_username}"
+msgstr "Пополнить баланс в {bot_username}"
+
+#: src/menus/start/balance.py:84
+msgid "Replenish amount: {amount} UAH"
+msgstr "Пополнить на сумму: {amount} грн."
+
+#: src/menus/start/balance.py:85
+msgid "Please pay by this link: {link} \n"
+msgstr "Пожалуйста, оплатите по этой ссылке: {link} \n"
+
+#: src/menus/start/balance.py:86
+msgid "After payment just wait 5-10 seconds, bot will proceed you payment."
+msgstr "После оплаты просто подождите 5-10 секунд, бот приступит к оплате."
+
+#: src/menus/start/balance.py:103
+msgid "Error while processing payment."
+msgstr "Ошибка при обработке платежа."
+
+#: src/menus/start/balance.py:110
+msgid "Your balance is replenished by: {amount} UAH"
+msgstr "Ваш баланс пополнен на: {amount} грн."
+
+#: src/menus/start/balance.py:111 src/menus/start/create_order.py:117
+msgid "Main menu"
+msgstr "Главное меню"
+
+#: src/menus/start/create_order.py:33
+msgid "You don't have a phone number."
+msgstr "Вы не указали номер телефеона в профиле."
+
+#: src/menus/start/create_order.py:62
+msgid "Date*"
+msgstr "Дата*"
+
+#: src/menus/start/create_order.py:63
+msgid "Time*"
+msgstr "Время*"
+
+#: src/menus/start/create_order.py:64
+msgid "Comment*"
+msgstr "Коментарий*"
+
+#: src/menus/start/create_order.py:65
+msgid "Technique type*"
+msgstr "Вид техники*"
+
+#: src/menus/start/create_order.py:65 src/menus/start/create_order.py:101
+#: src/models.py:33
+msgid "Road Construction"
+msgstr "Дорожностроительная"
+
+#: src/menus/start/create_order.py:65 src/menus/start/create_order.py:103
+#: src/models.py:35
+msgid "Communal"
+msgstr "Коммунальная"
+
+#: src/menus/start/create_order.py:65 src/menus/start/create_order.py:105
+#: src/models.py:37
+msgid "Special"
+msgstr "Спецтехника"
+
+#: src/menus/start/create_order.py:66 src/menus/start/profile.py:48
+msgid "Full name*"
+msgstr "Полное имя*"
+
+#: src/menus/start/create_order.py:67 src/menus/start/profile.py:49
+msgid "Phone*"
+msgstr "Телефон*"
+
+#: src/menus/start/create_order.py:68 src/menus/start/profile.py:50
+msgid "Email"
+msgstr "Имейл"
+
+#: src/menus/start/create_order.py:68 src/menus/start/profile.py:50
+msgid ""
+"Invalid Email 🙁\n"
+"Please try again"
+msgstr ""
+"Неправильный Email 🙁\n"
+"Повторите еще раз"
+
+#: src/menus/start/create_order.py:69
+msgid "City*"
+msgstr "Город*"
+
+#: src/menus/start/create_order.py:70
+msgid "Address*"
+msgstr "Адрес*"
+
+#: src/menus/start/create_order.py:76
+msgid "Select date"
+msgstr "Выберите дату"
+
+#: src/menus/start/create_order.py:77
+msgid "Make an order"
+msgstr "Создать заказ"
+
+#: src/menus/start/create_order.py:119
+msgid "You order created"
+msgstr "Вы создали заказ"
+
+#: src/menus/start/my_orders.py:42 src/menus/start/search_orders.py:44
+msgid "Order: {order_status}"
+msgstr "Заказ: {order_status}"
+
+#: src/menus/start/my_orders.py:45 src/menus/start/search_orders.py:47
+msgid "Full name: {full_name}"
+msgstr "Полное имя: {full_name}"
+
+#: src/menus/start/my_orders.py:47
+msgid "Doer name: "
+msgstr "Исполнитель: "
+
+#: src/menus/start/my_orders.py:62
+msgid "End order"
+msgstr "Завершить заказ"
+
+#: src/menus/start/my_orders.py:68 src/menus/start/search_orders.py:82
+#: src/menus/start/search_orders.py:116
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: src/menus/start/my_orders.py:83
+msgid "Order marked as ended."
+msgstr "Заказ помечен как завершенный."
+
+#: src/menus/start/profile.py:49
+msgid "Example: "
+msgstr "Пример: "
+
+#: src/menus/start/profile.py:49
+msgid ""
+"Invalid phone number 🙁\n"
+"Please enter it in format:\n"
+"38XXXXXXXXXX"
+msgstr ""
+"Неправильный номер телефона 🙁\n"
+"Пожалуйста, введите его в формате:\n"
+"38XXXXXXXXXX"
+
+#: src/menus/start/profile.py:51
+msgid "User type"
+msgstr "Тип пользователя"
+
+#: src/menus/start/profile.py:51 src/menus/start/profile.py:110
+#: src/menus/start/start.py:62 src/models.py:20
+msgid "Customer"
+msgstr "Заказчик"
+
+#: src/menus/start/profile.py:51 src/menus/start/start.py:63 src/models.py:22
+msgid "Doer"
+msgstr "Исполнитель"
+
+#: src/menus/start/profile.py:58
+msgid "👤 My profile"
+msgstr "👤 Мой профиль"
+
+#: src/menus/start/profile.py:71
+msgid "✅ Save"
+msgstr "✅ Сохранить"
+
+#: src/menus/start/profile.py:75
+msgid "🧹 Reset field"
+msgstr "🧹 Очистить поле"
+
+#: src/menus/start/profile.py:79
+msgid "⏪ Back"
+msgstr "⏪ Назад"
+
+#: src/menus/start/profile.py:99 src/menus/start/profile.py:101
+msgid "Your information saved."
+msgstr "Ваша информация сохранена."
+
+#: src/menus/start/search_orders.py:70
+msgid "Show phone number"
+msgstr "Показать номер телефона"
+
+#: src/menus/start/search_orders.py:73
+msgid "Take order"
+msgstr "Взять заказ"
+
+#: src/menus/start/search_orders.py:83
+msgid "It will cost {cost:.2f} UAH."
+msgstr "Стоимость этого заказа {cost:.2f} грн."
+
+#: src/menus/start/search_orders.py:98
+msgid "You don't have enough money on the balance."
+msgstr "Не достаточно денег на балансе."
+
+#: src/menus/start/search_orders.py:133
+msgid "Order marked as active."
+msgstr "Заказ помечен как активный."
+
+#: src/menus/start/start.py:50
+msgid "You were restricted from using this bot"
+msgstr "Вы были ограничены в использовании этого бота"
+
+#: src/menus/start/start.py:61
+msgid "Select type of user"
+msgstr "Выберите тип пользователя"
+
+#: src/menus/start/start.py:81
+msgid "Select action"
+msgstr "Выберите действие"
+
+#: src/menus/start/start.py:83
+msgid "Create order"
+msgstr "Создать заказ"
+
+#: src/menus/start/start.py:84
+msgid "My orders"
+msgstr "Мои заказы"
+
+#: src/menus/start/start.py:85 src/menus/start/start.py:91
+msgid "Profile"
+msgstr "Профиль"
+
+#: src/menus/start/start.py:86 src/menus/start/start.py:92
+msgid "Change language"
+msgstr "Сменить язык"
+
+#: src/menus/start/start.py:88
+msgid "Search orders"
+msgstr "Поиск заказов"
+
+#: src/menus/start/start.py:89
+msgid "Accepted orders"
+msgstr "Принятые заказы"
+
+#: src/menus/start/start.py:90
+msgid "Balance"
+msgstr "Баланс"
+
+#: src/menus/start/start.py:105
+msgid "Select a language:"
+msgstr "Выберите язык:"
+
+#: src/models.py:48
+msgid "New"
+msgstr "Новый"
+
+#: src/models.py:50
+msgid "Active"
+msgstr "Активная"
+
+#: src/models.py:52
+msgid "Ended"
+msgstr "Завершенные"
+
+#: src/scripts/init_permissions.py:12
+msgid "Access to \"Start\" menu"
+msgstr "Доступ к меню «Пуск»"
+
+#: src/scripts/init_permissions.py:13
+msgid "Access to \"Change language\" user menu"
+msgstr "Доступ к пользовательскому меню \"Сменить язык\""
+
+#: src/scripts/init_permissions.py:14
+msgid "Access to \"Balance\" menu"
+msgstr "Доступ к меню \"Баланс\""
+
+#: src/scripts/init_permissions.py:15
+msgid "Access to \"Create order\" menu"
+msgstr "Доступ к меню «Создать заказ»"
+
+#: src/scripts/init_permissions.py:16
+msgid "Access to \"My orders\" menu"
+msgstr "Доступ к меню «Мои заказы»"
+
+#: src/scripts/init_permissions.py:17
+msgid "Access to \"Profile\" menu"
+msgstr "Доступ к меню \"Профиль\""
+
+#: src/scripts/init_permissions.py:18
+msgid "Access to \"Search orders\" menu"
+msgstr "Доступ к меню «Поиск заказов»"
+
+#: src/scripts/init_permissions.py:19
+msgid "Access to \"Accepted orders\" menu"
+msgstr "Доступ к меню \"Принятые заказы\""
+
+#: src/scripts/init_permissions.py:23
+msgid "Access to \"Admin\" menu"
+msgstr "Доступ к меню \"Администратор\""
+
+#: src/scripts/init_permissions.py:24
+msgid "Access to \"Distribution\" admin menu"
+msgstr "Доступ к меню администратора \"Распространение\""
+
+#: src/scripts/init_permissions.py:26
+msgid "Access to \"Settings\" admin menu"
+msgstr "Доступ к меню администратора \"Настройки\""
+
+#: src/scripts/init_permissions.py:29
+msgid "Access to \"Permissions\" menu"
+msgstr "Доступ к меню \"Права\""
+
+#: src/scripts/init_permissions.py:30
+msgid "Allow add permission"
+msgstr "Разрешить добавить привилегию"
+
+#: src/scripts/init_permissions.py:31
+msgid "Allow remove permission"
+msgstr "Разрешить удалить привилегию"
+
+#: src/scripts/init_permissions.py:33
+msgid "Superuser"
+msgstr "Суперпользователь"
+
+#~ msgid "This field allow only document."
+#~ msgstr "Это поле принимает только документ."
+
+#~ msgid "This field allow only photo."
+#~ msgstr "Это поле поддерживает только фото."
+
+#~ msgid "Moderation"
+#~ msgstr "Модерирование"
+
+#~ msgid "Prices"
+#~ msgstr "Цены"
+
+#~ msgid "Withdraw requests"
+#~ msgstr "Запросы на снятие средств"
+
+#~ msgid "Users"
+#~ msgstr "Пользователи"
+
+#~ msgid "Set chat"
+#~ msgstr "Установить чат"
+
+#~ msgid "All users distribution"
+#~ msgstr "Рассылки всех пользователей"
+
+#~ msgid "🔙 Back"
+#~ msgstr "🔙 Назад"
+
+#~ msgid "Choose distribution type:"
+#~ msgstr "Выберите тип рассылки:"
+
+#~ msgid "*Referral cost"
+#~ msgstr "*Реферальная стоимость"
+
+#~ msgid "*Minimal withdraw amount"
+#~ msgstr "*Минимальная сумма вывода средств"
+
+#~ msgid "*Subscription price per day"
+#~ msgstr "*Цена подписки на чат за 1 день"
+
+#~ msgid "*Repin price"
+#~ msgstr "*Цена за 1 перезакреп"
+
+#~ msgid "*Distribution price per user"
+#~ msgstr "*Цена рассылки за 1 пользователя"
+
+#~ msgid "*Warning text"
+#~ msgstr "*Текст предупреждения"
+
+#~ msgid ""
+#~ "1. Add this bot as chat administrator\n"
+#~ "2. Send \"/connect\" message to chat"
+#~ msgstr ""
+#~ "1. Добавьте этого бота в качестве администратора чата\n"
+#~ "2. Отправьте сообщение «/connect» в чат"
+
+#~ msgid "Back to admin menu"
+#~ msgstr "Вернуться в меню администратора"
+
+#~ msgid "Group was set. Invite link was generated."
+#~ msgstr "Группа создана. Ссылка на приглашение сгенерирована."
+
+#~ msgid ""
+#~ "Group was set.\n"
+#~ "Please send me chat invite link."
+#~ msgstr ""
+#~ "Группа создана.\n"
+#~ "Пожалуйста, пришлите мне ссылку для приглашения в чат."
+
+#~ msgid "Chat saved."
+#~ msgstr "Чат сохранен."
+
+#~ msgid "*Grace time"
+#~ msgstr "*Льготное время"
+
+#~ msgid "minutes"
+#~ msgstr "минуты"
+
+#~ msgid "*Delay before message deletion"
+#~ msgstr "*Задержка перед удалением сообщения"
+
+#~ msgid "seconds"
+#~ msgstr "секунды"
+
+#~ msgid "*Delay before warning deletion"
+#~ msgstr "*Задержка перед удалением предупреждения"
+
+#~ msgid "*Welcome message"
+#~ msgstr "*Приветствие"
+
+#~ msgid "*Restrict message"
+#~ msgstr "*Ограничить сообщение"
+
+#~ msgid "*Public offer link"
+#~ msgstr "*Ссылка публичной оферты"
+
+#~ msgid "*Merchant ID"
+#~ msgstr "*ID Мерчанта"
+
+#~ msgid "*Merchant Key"
+#~ msgstr "*Ключ мерчанта"
+
+#~ msgid "*Maximum warnings"
+#~ msgstr "*Максимальное количество предупреждений"
+
+#~ msgid "User:"
+#~ msgstr "Пользователь:"
+
+#~ msgid "Username:"
+#~ msgstr "Имя пользователя:"
+
+#~ msgid "Main balance:"
+#~ msgstr "Основной баланс:"
+
+#~ msgid "Referral balance:"
+#~ msgstr "Реферальный баланс:"
+
+#~ msgid "Bonus balance:"
+#~ msgstr "Бонусный баланс"
+
+#~ msgid "Nobody"
+#~ msgstr "Никто"
+
+#~ msgid "Referrer:"
+#~ msgstr "Пригласивший:"
+
+#~ msgid "Referrals by levels:"
+#~ msgstr "Пригласивший:"
+
+#~ msgid "Level {i}:"
+#~ msgstr "Уровень {i}:"
+
+#~ msgid "There is no users in bot yet"
+#~ msgstr "В боте пока нет пользователей"
+
+#~ msgid "Change referral balance"
+#~ msgstr "Изменить реферальный баланс"
+
+#~ msgid "Change bonus balance"
+#~ msgstr "Изменить бонусный баланс"
+
+#~ msgid "Wrong balance selected"
+#~ msgstr "Выбран неверный баланс"
+
+#~ msgid "Main balance"
+#~ msgstr "Основной баланс"
+
+#~ msgid "Referral balance"
+#~ msgstr "Реферальный баланс"
+
+#~ msgid "Bonus balance"
+#~ msgstr "Бонусный баланс"
+
+#~ msgid ""
+#~ "User has {amount} UAH on {balance_name}.\n"
+#~ "Please enter new amount:"
+#~ msgstr ""
+#~ "У пользователя есть  {amount} грн на {balance_name}.\n"
+#~ "Пожалуйста, введите новую сумму:"
+
+#~ msgid "Card:"
+#~ msgstr "Карта:"
+
+#~ msgid "Amount:"
+#~ msgstr "Сумма:"
+
+#~ msgid "Balance:"
+#~ msgstr "Баланс:"
+
+#~ msgid "Paid:"
+#~ msgstr "Выплачено:"
+
+#~ msgid "Mark as paid"
+#~ msgstr "Отметить как оплаченный"
+
+#~ msgid "Show not paid"
+#~ msgstr "Показать не оплаченные"
+
+#~ msgid "Show paid"
+#~ msgstr "Показать оплаченные"
+
+#~ msgid "Withdraw request marked as paid."
+#~ msgstr "Запрос на вывод средств отмечен как оплаченный."
+
+#~ msgid "Your referral link:"
+#~ msgstr "Ваша реферальная ссылка:"
+
+#~ msgid "Invited users: {invited_users}"
+#~ msgstr "Приглашенные пользователи: {invited_users}"
+
+#~ msgid "Referral balance: {referral_balance:.2f}"
+#~ msgstr "Реферальный баланс: {referral_balance:.2f}"
+
+#~ msgid "Bonus balance: {bonus_balance:.2f}"
+#~ msgstr "Бонусный баланс: {bonus_balance:.2f}"
+
+#~ msgid "Referrals"
+#~ msgstr "Рефералы"
+
+#~ msgid "Withdraw money"
+#~ msgstr "Вывод денег"
+
+#~ msgid "Subscription"
+#~ msgstr "Подписка"
+
+#~ msgid "Order ads"
+#~ msgstr "Заказать рассылку"
+
+#~ msgid "Public offer"
+#~ msgstr "Публичная оферта"
+
+#~ msgid "Chat"
+#~ msgstr "Чат"
+
+#~ msgid "Minimum amount to withdraw is {amount} UAH."
+#~ msgstr "Минимальная сумма для вывода составляет {amount} грн."
+
+#~ msgid "Please select balance from which you want to withdraw:"
+#~ msgstr "Пожалуйста, выберите баланс, с которого хотите снять деньги:"
+
+#~ msgid ""
+#~ "You request created, you will be notified when your request will be "
+#~ "approved."
+#~ msgstr ""
+#~ "Ваш запрос обрабатывается. По завершению обработки запроса Вам придет "
+#~ "уведомление."
+
+#~ msgid "Wrong input. Try again!"
+#~ msgstr "Неверный ввод. Попробуйте еще раз!"
+
+#~ msgid "Access to \"Referrals\" user menu"
+#~ msgstr "Доступ к меню пользователя \" Рефералы\""
+
+#~ msgid "Access to \"Withdraw\" menu"
+#~ msgstr "Доступ к меню \"Вывод денег\""
+
+#~ msgid "Access to \"Moderation\" admin menu"
+#~ msgstr "Доступ к меню администратора \" Модерация\""
+
+#~ msgid "Access to \"Withdraw requests\" admin menu"
+#~ msgstr "Доступ к меню администратора \"Запросы на вывод\""
+
+#~ msgid "Access to \"Users\" admin menu"
+#~ msgstr "Доступ к меню администратора \"Пользователи\""
+
+#~ msgid "Allow to set new chat for bot"
+#~ msgstr "Разрешить устанавливать новый чат для бота"
+
+#~ msgid "Allow to post anything anytime to chat"
+#~ msgstr "Разрешить публиковать что-либо в любое время в чате"
+
+#~ msgid "Allow change main balance in users menu"
+#~ msgstr "Разрешить изменение основного баланса в меню пользователя"
+
+#~ msgid "Allow change referral balance in users menu"
+#~ msgstr "Разрешить изменение реферального баланса в меню пользователя"
+
+#~ msgid "Allow change bonus balance in users menu"
+#~ msgstr "Разрешить изменение бонусного баланса в меню пользователя"
