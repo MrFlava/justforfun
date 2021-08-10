@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pure HTML5+CSS3 web-page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Botman</span> 
+    </div>
+    <div id="about">
+      <a href="#" onclick="slowScroll('#main')" title="Возможности">Возможности</a>
+      <a href="#" onclick="slowScroll('#plan')" title="Схема работы">Схема работы</a>
+      <a href="#" onclick="slowScroll('#examples')" title="Примеры работ">Примеры работ</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Ответы на вопросы">Контакты</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Создание чат ботов</h1>
+    <h3>Новые возможности для вашего бизнеса</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Возможности</h2>
+    </div>
+    <div class="text">
+      <span>
+        <p>Станете ближе к своим клиентам</p>
+        <p>Сможете сэкономить на зарплате для целого штата сотрудников</p>
+        <p>Выгодно выделитесь на фоне конкурирующих фирм</p>
+        <p>Присоеденитесь к успешным предпринимателям которые уже сделали свой выбор</p>
+      </span>
+    </div>
+  </div>
+
+  <div id="plan">
+    <h2>Схема работы</h2>
+      <h4 align="left">Заявка</h4>
+        <p align="left">Вы связываетесь</p>
+        <p align="left">с нашим оператором любым удобным способом.<b>Уточняете действие акций и скидок!</b></p>
+      <h4 align="left">Согласование деталей </h4>
+        <p align="left">Вместе с нашим разработчиком уточняете важные вопросы.</p>
+        <p align="left"><b>Вы можете сократить время разработки</b> предоставив</p>
+        <p align="left">дополнительную информацию. Никто не знает нюансы вашего дела лучше вас!</p>
+       <h4 align="left">Предоплата</h4>
+        <p align="left">Вы вносите<b>предоплату в размере 30%</b>от общей сумы чтобы</p>
+        <p align="left">мы могли приступить к выполнению заказа.</p>
+       <h4 align="left">Выполнение заказа</h4>
+        <p align="left">Команда разработчиков выполняет поставленное, оговоренное</p>
+        <p align="left">задание и предоставляет готового к использованию бота.</p>
+        <p align="left">Качество <b>выполненных работ можно протестировать.</b></p>
+      <h4 align="left">Оплата</h4>
+        <p align="left">Вы оплачиваете оставшуюся часть оговоренной сумы с</p>
+        <p align="left">помощью банковских карт, <b>Visa/MasterCard, PayPal</b> либо же </p>
+        <p align="left">другим удобным способом.</p>
+      <h4 align="left">Поддержка</h4>
+        <p align="left">Ведущие специалисты будут проводить поддержку продукта на</p>
+        <p align="left"><b>протяжении 2 месяцев.</b></p>
+        
+
+  </div>
+
+  <div id="examples">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="contacts">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
+
