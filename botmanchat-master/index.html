@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Simplebar CSS -->
+    <link rel="stylesheet"href="css/simplebar.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <style>
+      @font-face {font-family: Lato; src: url("fonts/LATO-REGULAR_0.TTF");}
+      p {font-family: Lato;}
+    </style>
+     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/> 
+    <title> Botman | Чат </title>
+  </head>
+  <body>
+    <div class="px-3 py-1">
+        <div class="row">
+          <div id="first_column" class="col-sm-8 col-md-8 col-lg-9 col-xl-9">
+            <div id="chat" class="card chat">
+              <div id="header_v1" class="bg-primary text-white card-header chat-header">
+                <a class="remove-icon" onclick="closedialogMenu()">
+                 <i class="fa fa-times"></i>
+                </a>
+                <div class="media contact-info clearfix">
+                  <img class="mr-2 rounded-circle contact-image" src="images/user.png"/>
+                  <div class="contact-name-and-status">
+                    <p class="mb-0 l-0 text-white">Контакт 2</p>
+                    <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                    <small class="d-none ml-3"><span class="circle-not-online"></span>был(а) сегодня в 12:12</small>
+                  </div>
+                </div>
+              </div>
+               <div  id="header_v2" class="d-none bg-primary text-white card-header chat-header">
+                  <p class="text-center">Не выбран контакт</p>
+              </div>
+               <div class="messages-top rounded-top"></div>
+              <div id="body_v1" class="card-body chat-body pt-5" data-simplebar>
+                <div class="media float-left my-3">
+                  <img class="mr-2 rounded-circle contact-image" src="images/user.png">
+                  <div class="contact-message pl-2 pb-3 mb-0">
+                    Контакт 2<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus. Atque, praesentium, sint!
+                  </div>
+                </div>
+                <div class="media float-left my-3">
+                  <img class="mr-2 rounded-circle contact-image" src="images/user.png">
+                  <div class="contact-message pl-2 pb-3 mb-0">
+                    Контакт 2<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus. Atque, praesentium, sint!
+                  </div>
+                </div>
+                <div class="media float-left my-3">
+                  <img class="mr-2 rounded-circle contact-image" src="images/user.png">
+                  <div class="contact-message pl-2 pb-3 mb-0">
+                    Контакт 2<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus. Atque, praesentium, sint!
+                  </div>
+                </div>
+                <div class="media float-right my-3">
+                  <div class="contact-message pl-2 pb-3 mb-0">
+                    Контакт 2<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus. Atque, praesentium, sint!
+                  </div>
+                  <img class="ml-2 rounded-circle user-image" src="images/user.png">
+                </div>
+                <div class="media float-right my-3">
+                  <div class="contact-message pl-2 pb-3 mb-0">
+                    Контакт 2<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus. Atque, praesentium, sint!
+                  </div>
+                  <img class="ml-2 rounded-circle user-image" src="images/user.png">
+                </div>
+              </div>
+              <div id="body_v2" class="d-none card-body chat-body">
+                <p class="text-center text-muted empty-message-box">Найдите и выберите контакт для начала общения</p>
+              </div>
+              <div id="footer" class="chat-footer">
+                <button type="button" class="btn btn-link attach-file">
+                  <i class="fa fa-paperclip fa-rotate-90 fa-2x" aria-hidden="true"></i>
+                 </button>
+                 <textarea id="input_message" style="border-radius: 10px; border: solid  1px #EEEEEE; max-height: 100px;" class=" bg-light form-control  form-control-sm form-control-borderless input-message" rows="2" placeholder="Сообщение"></textarea>
+              </div>
+            </div>
+          </div>
+          <div id="second_column" class="col-sm-4 col-md-4 col-lg-3 col-xl-3">
+            <div id="search" class="card search">
+              <div class="input-group search-field no-border">
+                  <input class="bg-light form-control form-control-borderless ml-sm-0 border-white input-search" type="text"
+                  placeholder="Поиск">
+              </div>
+              <div class="card-body search-body" data-simplebar>
+                <div class="contacts list-group">
+                  <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="mt-2 contact-data">
+                        <p class="mb-0 l-0 text-black">Контакт 1</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a onclick="dialogredirectMenu()" class="scroll-wrapper list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 2</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 3</p>
+                        <small class="d-none ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                   <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 4</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 5</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action border-bottom contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 6</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a onclick="dialogredirectMenu()" class="list-group-item list-group-item-action contacts-list">
+                    <div class="media p-auto my-0">
+                      <img class="mt-2 mr-2 rounded-circle contact-image" src="images/user.png"/>
+                      <div class="contact-data mt-2">
+                        <p class="mb-0 l-0 text-black">Контакт 7</p>
+                        <small class="ml-3"><span class="circle-online"></span>в сети</small>
+                        <small class="d-none ml-3"><span class="search-block-circle-not-online"></span>был(а) сегодня в 12:12</small>
+                        <p class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non omnis doloremque soluta, maiores harum, placeat neque eligendi esse reiciendis nisi distinctio necessitatibus nulla et quasi delectus.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="d-none card-body chat-body">
+                <p class="text-muted text-center">Не найден контакт</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/plugins/autosize.js"></script>
+    <script>
+      autosize(document.querySelectorAll('textarea'));
+    </script>
+    <script src="js/botmanchat.js"></script>
+    <script src="js/plugins/simplebar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
