@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Botman | Связаться с нами</title>
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'/>
+
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
+  
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a class="navbar-brand logo_h" href="index.html"><h1>BOTMAN</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+              <li class="nav-item"><a class="nav-link" href="team.html">Наша команда</a>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Продукты</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Админ панель</a>                  
+                  <li class="nav-item"><a class="nav-link" href="bots.html">Боты</a>                 
+                </ul>
+							</li>
+              <li class="nav-item active"><a class="nav-link" href="contact.html">Связаться с нами</a></li>
+            </ul>
+
+            <ul class="nav-right text-center text-lg-right py-4 py-lg-0">
+              <li><a href="#">Заказать бота</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+
+  
+  <!--================Hero Banner Area Start =================-->
+  <section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+      <h2>Связаться с нами</h2>
+    </div>
+  </section>
+  <!--================Hero Banner Area End =================-->
+
+
+  <!-- ================ contact section start ================= -->
+  <section class="section-margin--large">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 50.0176106, lng: 36.3063215};
+            var grayStyles = [
+              {
+                featureType: "all",
+                stylers: [
+                  { saturation: -90 },
+                  { lightness: 50 }
+                ]
+              },
+              {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 50.0176106, lng: 36.3063215},
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel:  false
+            });
+          }
+          
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+        
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Заполните форму</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Напишите что-то"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Имя">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" placeholder="E-mail">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Тема письма">
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm">Отправить сообщение</button>
+            </div>
+          </form>
+
+
+        </div>
+
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>Харьков, Харьковская обл.</h3>
+              <p>Улица, Дом №</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3><a href="tel:454545654">+(380) 9865 562</a></h3>
+              <p>Понедельник - Пятница 9:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3><a href="mailto:support@colorlib.com">support@botmanlib.com</a></h3>
+              <p>Круглосуточная тех. поддержка!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<!-- ================ contact section end ================= -->
+
+  <!-- ================ start footer Area ================= -->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3  col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>О Botman</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fugiat maiores placeat. Doloribus quisquam accusamus pariatur architecto, deserunt ullam quibusdam.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Навигация по сайту</h6>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about.html">О компании</a></li>
+                  <li><a href="team.html">Наша команда</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">Админ панель</a></li>
+                  <li><a href="bots.html">Боты</a></li>
+                  <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+              </div>                    
+            </div>              
+          </div>
+        </div>              
+        <div class="col-lg-3  col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Новостная рассылка</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fugiat maiores placeat.
+            </p>                
+            <div id="mc_embed_signup">
+              <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+                <div class="input-group d-flex flex-row">
+                  <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                  <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>    
+                </div>                  
+                <div class="mt-10 info"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-6">
+          <div class="single-footer-widget mail-chimp">
+            <h6 class="mb-20">Наш Instagram</h6>
+            <ul class="instafeed d-flex flex-wrap">
+              <li><img src="img/instagram/i1.jpg" alt=""></li>
+              <li><img src="img/instagram/i2.jpg" alt=""></li>
+              <li><img src="img/instagram/i3.jpg" alt=""></li>
+              <li><img src="img/instagram/i4.jpg" alt=""></li>
+              <li><img src="img/instagram/i5.jpg" alt=""></li>
+              <li><img src="img/instagram/i6.jpg" alt=""></li>
+              <li><img src="img/instagram/i7.jpg" alt=""></li>
+              <li><img src="img/instagram/i8.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>            
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">Копирайт &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://botman.com.ua" target="_blank">Botman</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ================ End footer Area ================= -->
+
+  <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+  </div>
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>	
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
